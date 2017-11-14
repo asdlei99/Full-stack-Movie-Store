@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+	<Resource
+	name = "jdbc/moviedb"
+	auth = "Container"
+	type = "javax.sql.DataSource"
+	maxActive = "-1"
+	maxIdle = "30"
+	maxWait = "10000"
+	driverClassName = "com.mysql.jdbc.Driver"
+	url = "jdbc:mysql://localhost:3306/moviedb?autoReconnect=true&amp;useSSL=false"
+	username = "root"
+	password = ""/>
+	
+	<Resource
+	name = "jdbc/master"
+	auth = "Container"
+	type = "javax.sql.DataSource"
+	maxActive = "-1"
+	maxIdle = "30"
+	maxWait = "10000"
+	driverClassName = "com.mysql.jdbc.Driver"
+	url = "jdbc:mysql://ec2-54-245-159-204.us-west-2.compute.amazonaws.com:3306/moviedb?autoReconnect=true&amp;useSSL=false"
+	username = "mytestuser"
+	password = "mypassword"/>
+</Context>
